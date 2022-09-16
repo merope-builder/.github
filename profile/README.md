@@ -16,3 +16,7 @@ Depending on the processing time required to run the analyses, these are suitabl
 
 ## Etymology
 *[Merope](https://en.wikipedia.org/wiki/Merope_(Pleiad))* is a figure in Greek myth, one of the [Pleiades](https://en.wikipedia.org/wiki/Pleiades) and the wife of [Sisyphus](https://en.wikipedia.org/wiki/Sisyphus). You can draw your own conclusions about the relevance of Sisyphus to the construction of research outputs, but often when we're fully committed to a difficult and lengthy task, somebody closeby will be able to offer a simpler way.
+
+## Contacts
+
+- [Nicky Nicolson](https://github.com/nickynicolson) ([n.nicolson@kew.org](mailto:n.nicolson@kew.org))
