@@ -1,7 +1,9 @@
 # merope-builder
 
-Collates a set of template repositories that automate data access, analysis, result visualisation and compilation of a research paper document.
-Depending on the processing time required to run the analyses, these are suitable for execution using github's continuous integration.
+""**m**ak**e** **r**esearch **o**ut**p**uts, **e**asier"
+
+A toolkit of template repositories which automate data access, analysis, result visualisation and compilation of a research paper document.
+Depending on the processing time required to run the analyses, these are suitable for execution using github's continuous integration facility (Github actions).
 
 ## Technologies
 
@@ -13,4 +15,4 @@ Depending on the processing time required to run the analyses, these are suitabl
 - Continuous integration: Github actions
 
 ## Etymology
-The purpose of this toolkit is to "**m**ak**e** **r**esearch **o**ut**p**uts, **e**asier. *[Merope](https://en.wikipedia.org/wiki/Merope_(Pleiad))* is a figure in Greek myth, one of the [Pleiades](https://en.wikipedia.org/wiki/Pleiades) and the wife of [Sisyphus](https://en.wikipedia.org/wiki/Sisyphus). You can draw your own conclusions about the relevance of Sisyphus to the construction of research outputs, but often when we're fully committed to a difficult and lengthy task, somebody closeby will be able to offer a simpler way.
+*[Merope](https://en.wikipedia.org/wiki/Merope_(Pleiad))* is a figure in Greek myth, one of the [Pleiades](https://en.wikipedia.org/wiki/Pleiades) and the wife of [Sisyphus](https://en.wikipedia.org/wiki/Sisyphus). You can draw your own conclusions about the relevance of Sisyphus to the construction of research outputs, but often when we're fully committed to a difficult and lengthy task, somebody closeby will be able to offer a simpler way.
