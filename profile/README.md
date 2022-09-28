@@ -8,7 +8,7 @@ Depending on the processing time required to run the analyses, these are suitabl
 ## Technologies
 
 - Scripting language: Python (though the principle equally suited for R or other scripting languages)
-- Document source format: Markdown, YAML metadata (for authors, affiliations etc)
+- Document source format: Markdown, YAML metadata (for authors, affiliations etc), mermaid embedded diagrams
 - Document compilation: pandoc
 - Bibliographic references data format: bibtex
 - Dependency management and build automation: make
