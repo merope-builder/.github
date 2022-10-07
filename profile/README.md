@@ -33,10 +33,10 @@ This is a trivial example, but as your research project grows bigger and more co
 ## How to use
 
 1. Set up an analysis:
-    1. Navigate to [merope-analysis](merope-analysis) and click the "use this template" button. Specify where you want your new analysis repository to be stored.
+    1. Navigate to [merope-analysis](https://github.com/merope-builder/merope-analysis) and click the "use this template" button. Specify where you want your new analysis repository to be stored.
     1. Modify the new repository to run your own analysis. You can add Python packages in `requirements.txt`
 1. Set up a paper:
-    1. Navigate to [merope-paper](merope-paper) and click the "use this template" button. Specify where you want your new paper repository to be stored (it should be alongside your analysis repository that you created above).
+    1. Navigate to [merope-paper](https://github.com/merope-builder/merope-paper) and click the "use this template" button. Specify where you want your new paper repository to be stored (it should be alongside your analysis repository that you created above).
     1. Modify the new paper repository to refer to the artifacts from your analysis.
 
 Note: your project may be complex, if so you can create multiple analysis repositories, that each create a set of artifacts. You will have to modify your paper repository to refer to these. (details to follow)
