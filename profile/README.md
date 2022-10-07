@@ -19,6 +19,8 @@ There are some useful principles from software development which we can take ove
 
 Using **merope**, we would be able to make the same change as described above (altering the time period used in an analysis) by modifying a year parameter in a single datafile. All resources which depend upon this would be re-built automatically, so that you can ensure that all resources remain in synch.
 
+This is a trivial example, but as your research project grows bigger and more complex, it will be worth the initial time investment in setting up a defined process to build it and manage its dependencies.
+
 ## Technologies
 
 - Scripting language: Python (though the principle equally suited for R or other scripting languages)
@@ -27,6 +29,17 @@ Using **merope**, we would be able to make the same change as described above (a
 - Bibliographic references data format: bibtex
 - Dependency management and build automation: make
 - Continuous integration: Github actions
+
+## How to use
+
+1. Set up an analysis:
+    1. Navigate to [merope-analysis](merope-analysis) and click the "use this template" button. Specify where you want your new analysis repository to be stored.
+    1. Modify the new repository to run your own analysis. You can add Python packages in `requirements.txt`
+1. Set up a paper:
+    1. Navigate to [merope-paper](merope-paper) and click the "use this template" button. Specify where you want your new paper repository to be stored (it should be alongside your analysis repository that you created above).
+    1. Modify the new paper repository to refer to the artifacts from your analysis.
+
+Note: your project may be complex, if so you can create multiple analysis repositories, that each create a set of artifacts. You will have to modify your paper repository to refer to these. (details to follow)
 
 ## Etymology
 *[Merope](https://en.wikipedia.org/wiki/Merope_(Pleiad))* is a figure in Greek myth, one of the [Pleiades](https://en.wikipedia.org/wiki/Pleiades) and the wife of [Sisyphus](https://en.wikipedia.org/wiki/Sisyphus). You can draw your own conclusions about the relevance of Sisyphus to the construction of research outputs, but often when we're fully committed to a difficult and lengthy task, somebody closeby will be able to offer a simpler way.
