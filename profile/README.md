@@ -7,6 +7,8 @@ Depending on the processing time required to run the analyses, these are suitabl
 
 ## Why
 
+### Changes in analytical scope
+
 Imagine you're working on a paper that includes an analysis based on some data from a remote resource. You want to summarise it and maybe present it as a chart. You manually extract the data, build a chart image, set the titles and paste it into your draft, also updating the wording of the methods section to explain which years you used in your study. When you discuss it with your team you decide to modify the time period. What needs to change? The datafile needs to be downloaded or subsetted again, the chart image needs to be updated, its title and caption need to change and the methods wording also needs to change: theres a lot of scope for things to get out of synch.
 
 There are some useful principles from software development which we can take over to research paper management to help us with this kind of situation:
@@ -20,6 +22,11 @@ There are some useful principles from software development which we can take ove
 Using **merope**, we would be able to make the same change as described above (altering the time period used in an analysis) by modifying a year parameter in a single datafile. All resources which depend upon this would be re-built automatically, so that you can ensure that all resources remain in synch.
 
 This is a trivial example, but as your research project grows bigger and more complex, it will be worth the initial time investment in setting up a defined process to build it and manage its dependencies.
+
+### Isolating different versions of analytical software
+
+The use of a virtual machine to execute analyses allows us to explicitly specify which software verions we want to use, and these are isolated from our local working environment. If you have local update polices that specify which versions of software you have to use, this could be an option for you.
+
 
 ## Technologies
 
