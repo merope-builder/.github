@@ -11,22 +11,33 @@ Depending on the processing time required to run the analyses, these are suitabl
 
 Imagine you're working on a paper that includes an analysis based on some data from a remote resource. You want to summarise it and maybe present it as a chart. You manually extract the data, build a chart image, set the titles and paste it into your draft, also updating the wording of the methods section to explain which years you used in your study. When you discuss it with your team you decide to modify the time period. What needs to change? The datafile needs to be downloaded or subsetted again, the chart image needs to be updated, its title and caption need to change and the methods wording also needs to change: theres a lot of scope for things to get out of synch.
 
-There are some useful principles from software development which we can take over to research paper management to help us with this kind of situation:
+### Maintaining different versions of analytical software
+
+You might be working on a couple of projects at once - one is fairly complete and needs a specific set of software versions and libraries, one is more exploratory and you are testing out different ways of doing things. You don't want your new project to disrupt the environment for your established project, but also you don't want to be tied to old software versions out of concern about the effects of upgrades.
+
+## Applying software development principles to research management
+
+There are some useful principles from software development which we can take over to research paper management to help us with these situations:
 
 - **Automation** scripting processes with multiple manual steps so that they can be easily repeated
 - **Revision control** the use of plain text formats to store information, so that we can see changes as they are applied over the lifetime of the resource
 - **Use of variables**: when building software, we extract values that will be used repeatedly to variables, so that if they are modified, they need only be modified once
 - **Dependency management**: tools helps us define dependencies between different artifacts (datafiles, summaries, charts, article drafts) and the scripts used to buld them - so that if something changes, all downstream artifacts should also be refreshed
-- **Continuous integration**: the definition of build processes that run automatically when a permanent change is posted, in a well-defined environment (rather than a users local machine)
+- **Continuous integration**: the definition of build processes that run automatically when a permanent change is posted, in a well-defined virtualised environment (rather than a users local machine), where we can explicitly list the versions of software and libraries & recreate environments or create different environments in parallel.
 
-Using **merope**, we would be able to make the same change as described above (altering the time period used in an analysis) by modifying a year parameter in a single datafile. All resources which depend upon this would be re-built automatically, so that you can ensure that all resources remain in synch.
+## How merope can help
 
-This is a trivial example, but as your research project grows bigger and more complex, it will be worth the initial time investment in setting up a defined process to build it and manage its dependencies.
+| Situation                                 |   Merope |
+|-------------------------------------------|----------|
+| Change in analytical scope                | Modify the year parameter in a single datafile. All resources which depend upon this are re-built automatically and kept in synch.      |
+| Introducing a new member to the team      | Everything that is necessary to run the analysis is specified - avoiding the "it works on my machine" situation      |
+| Maintenance of multiple software versions | Multiple projects run in isolated environments without affecting each other |
 
-### Isolating different versions of analytical software
+As your research project(s) grow bigger and more complex, it will be worth the initial time investment in setting up a defined process to build and manage dependencies. A defined process and a virtualised execution environment also allows you to isolate execution from your local working environment. If you have local update polices that specify which versions of software you have to use, this could be an option for you.
 
-The use of a virtual machine to execute analyses allows us to explicitly specify which software verions we want to use, and these are isolated from our local working environment. If you have local update polices that specify which versions of software you have to use, this could be an option for you.
+The project structure - automation, revision control, use of variables and dependency management can be used locally as you develop your code.
 
+Its probably not sensible to use this for interactive development of new code, but this can also be an option for packaging up pre-existing projects and giving them a safe home / environment in which to work.
 
 ## Technologies
 
